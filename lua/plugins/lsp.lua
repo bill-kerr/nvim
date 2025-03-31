@@ -19,6 +19,10 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
 
+			lspconfig.biome.setup({
+				capabilities = capabilities
+			})
+
 			lspconfig.gopls.setup({
 				capabilities = capabilities
 			})
