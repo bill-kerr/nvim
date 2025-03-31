@@ -10,7 +10,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 					apply = true,
 				})
 
-				-- source.organizeImports is non-blocking, so we wait a reasonable amount of time here.
+				-- code_action is non-blocking, so we wait a reasonable amount of time here.
 				vim.wait(100)
 
 				-- format
