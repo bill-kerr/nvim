@@ -32,7 +32,14 @@ return {
 			})
 
 			lspconfig.ts_ls.setup({
-				capabilities = capabilities
+				capabilities = capabilities,
+				settings = {
+					typescript = {
+						preferences = {
+							importModuleSpecifier = "non-relative"
+						}
+					}
+				}
 			})
 
 			lspconfig.lua_ls.setup({
