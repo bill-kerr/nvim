@@ -2,7 +2,7 @@ local format_filter = function(client)
 	return client.name ~= "ts_ls"
 end
 
-function dump(o)
+local function dump(o)
 	if type(o) == 'table' then
 		local s = '{ '
 		for k, v in pairs(o) do
