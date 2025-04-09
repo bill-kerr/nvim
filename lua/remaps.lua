@@ -37,3 +37,6 @@ vim.keymap.set("n", "<leader>/", function()
 		previewer = false,
 	})
 end, { desc = "[/] Fuzzily search in current buffer" })
+
+vim.keymap.set("n", "<leader>ng", "<cmd>Neotree float git_status<cr>", {})
+vim.keymap.set("n", "<leader>nn", "<cmd>Neotree filesystem reveal left toggle=true<cr>", {})
