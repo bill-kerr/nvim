@@ -10,4 +10,18 @@ return {
 	---@module "neo-tree"
 	---@type neotree.Config?
 	opts = {},
+	config = function()
+		require("neo-tree").setup({
+			filesystem = {
+				hijack_netrw_behavior = "open_current",
+				filtered_items = {
+					visible = false,
+					hide_dotfiles = false,
+					never_show = {
+						".git"
+					}
+				}
+			}
+		})
+	end
 }
